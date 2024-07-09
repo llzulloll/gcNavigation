@@ -20,8 +20,8 @@ const switchNavigator = createSwitchNavigator({
     Signin: SigninScreen
   }),
   mainFlow: createMaterialBottomTabNavigator({
-    Map: MapScreen,
     Building: BuildingScreen,
+    Map: MapScreen,
     Account: AccountScreen,
   })
 

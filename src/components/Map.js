@@ -5,11 +5,12 @@ import { Context as LocationContext } from "../context/LocationContext";
 
 const Map = () => {
 
-    const { state: { currentLocation } } = useContext(LocationContext);
+    // current location circle
+    //    const { state: { currentLocation } } = useContext(LocationContext);
 
-    if (!currentLocation) {
-        return <ActivityIndicator size="large" style={{ marginTop: 200 }} />
-    }
+    //     if (!currentLocation) {
+    //         return <ActivityIndicator size="large" style={{ marginTop: 200 }} />
+    //     }
 
     // console.log(currentLocation)
 
@@ -27,12 +28,12 @@ const Map = () => {
                 longitudeDelta: 0.01,
             }}
         >
-            <Circle
+            {/* <Circle
                 center={currentLocation.coords}
                 radius={40}
                 strokeColor="rgba(158,158,255,1.0)"
                 fillColor="rgba(158,158,255,.5)"
-            />
+            /> */}
         </MapView >
 
     );
